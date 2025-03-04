@@ -26,7 +26,7 @@ wheels = [
 ]
 
 [[package]]
-name = "calculator-mcp"
+name = "math-mcp"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

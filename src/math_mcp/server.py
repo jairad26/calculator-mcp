@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional, Union, Any, Tuple
 from mcp.server.fastmcp import FastMCP
 import math
-from advanced_math import (
+from .advanced_math import (
     factorial, 
     fibonacci, 
     calculate_statistics, 
@@ -14,7 +14,7 @@ from advanced_math import (
 )
 
 # Initialize FastMCP server
-mcp = FastMCP("calculator")
+mcp = FastMCP("math")
 
 # Basic arithmetic operations
 
@@ -174,7 +174,7 @@ async def angle_convert(angle: float, from_unit: str, to_unit: str) -> Dict[str,
     }
 
 def main():
-    """Entry point for the Calculator MCP server."""
+    """Entry point for the math MCP server."""
     mcp.run(transport='stdio')
     
 if __name__ == "__main__":

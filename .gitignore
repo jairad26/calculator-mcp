@@ -159,7 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Calculator MCP specific
-calculator_mcp.pid
-calculator_mcp.log
+# math MCP specific
+math_mcp.pid
+math_mcp.log
 *.log

@@ -1,4 +1,4 @@
-# Calculator MCP Server
+# Math MCP Server
 
 A simple MCP (Model-Calling Protocol) server that provides mathematical calculation tools.
 
@@ -31,13 +31,13 @@ A simple MCP (Model-Calling Protocol) server that provides mathematical calculat
 You can run the server directly:
 
 ```bash
-python calculator_mcp.py
+python math_mcp.py
 ```
 
 Or with HTTP transport:
 
 ```bash
-python calculator_mcp.py --transport http --host localhost --port 8000
+python math_mcp.py --transport http --host localhost --port 8000
 ```
 
 ### Server Management
@@ -52,7 +52,7 @@ python run_server.py
 python run_server.py --transport http --host localhost --port 8000
 
 # Run as a daemon in the background
-python run_server.py --daemon --log-file calculator.log
+python run_server.py --daemon --log-file math.log
 
 # Check server status
 python run_server.py --status
@@ -98,8 +98,8 @@ The `calculate_expression` tool supports complex mathematical expressions includ
 # Client code example
 from mcp.client import Client
 
-# Connect to the calculator MCP server
-client = Client(transport="stdio", command=["python", "calculator_mcp.py"])
+# Connect to the math MCP server
+client = Client(transport="stdio", command=["python", "math_mcp.py"])
 
 # Basic operations
 result = client.add(5, 3)  # Returns 8
@@ -117,7 +117,7 @@ For a complete example, see the `example_client.py` file.
 Run the test suite to verify the functionality:
 
 ```bash
-python test_calculator.py
+python test_math.py
 ```
 
 To test the expression evaluator specifically:
@@ -130,10 +130,10 @@ The test suite verifies all mathematical operations and error handling.
 
 ## Project Structure
 
-- `calculator_mcp.py`: Main MCP server implementation
+- `math_mcp.py`: Main MCP server implementation
 - `advanced_math.py`: Module containing advanced mathematical functions
 - `example_client.py`: Example client demonstrating how to use the server
-- `test_calculator.py`: Test suite for verifying functionality
+- `test_math.py`: Test suite for verifying functionality
 - `test_expression_evaluator.py`: Test suite for the expression evaluator
 - `run_server.py`: Script for running the server as a service
 - `requirements.txt`: Python dependencies
@@ -143,7 +143,7 @@ The test suite verifies all mathematical operations and error handling.
 To add more mathematical functions:
 
 1. Add the implementation to `advanced_math.py`
-2. Create a new tool method in `calculator_mcp.py` that wraps the function
+2. Create a new tool method in `math_mcp.py` that wraps the function
 3. Update the documentation and examples as needed
 
 ## License

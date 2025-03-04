@@ -5,7 +5,7 @@ This script tests the functionality of the evaluate_expression function.
 """
 
 import unittest
-from src.calculator_mcp.advanced_math import evaluate_expression
+from src.math_mcp.advanced_math import evaluate_expression
 
 class TestExpressionEvaluator(unittest.TestCase):
     """Test case for the expression evaluator."""

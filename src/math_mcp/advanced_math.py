@@ -1,5 +1,5 @@
 """
-Advanced mathematical operations for the Calculator MCP Server.
+Advanced mathematical operations for the math MCP Server.
 This module provides more complex mathematical functions beyond basic arithmetic.
 """
 
